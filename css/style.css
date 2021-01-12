@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Cairo Bold";
+  src: url("/scss/base/fonts/Cairo/Cairo-Bold.ttf");
+}
+@font-face {
+  font-family: "Roboto Light";
+  src: url("/scss/base/fonts/Roboto/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Roboto Regular";
+  src: url("/scss/base/fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto Medium";
+  src: url("/scss/base/fonts/Roboto/Roboto-Medium.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.c-header__container {
+  background-image: url("/images/img-bg-header.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.c-header__container-inner {
+  height: 97%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-header__text {
+  color: #BCBCBC;
+  font-family: "Roboto Medium", sans-serif;
+}
+
+.c-header__text-above {
+  padding-bottom: 1.8rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+}
+.c-header__text-above:after {
+  content: "";
+  border-bottom: 2px solid #E74315;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 75px;
+  transform: translate(-50%);
+}
+
+.c-header__headline {
+  font-family: "Cairo Bold", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+  font-size: 2rem;
+}
+.c-header__headline span {
+  font-size: 2rem;
+  color: #BCBCBC;
+  border-right: 1px solid #FFB86C;
+  padding-right: 0.4rem;
+  margin-right: 0.4rem;
+}
+
+.c-header__flag-wrap {
+  display: inline-flex;
+  margin: 1rem 0;
+}
+
+.c-header__flag--red, .c-header__flag--green, .c-header__flag--orange {
+  border: 1px solid transparent;
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: #E74315;
+}
+
+.c-header__flag--orange {
+  background-color: #FFB86C;
+}
+
+.c-header__flag--green {
+  background-color: #50FA7B;
+}
+
+.c-header__side {
+  font-family: "Roboto Light", sans-serif;
+  text-transform: uppercase;
+  color: white;
+  transform: rotate(-90deg);
+  font-size: 0.5rem;
+  border-bottom: 2px solid #E74315;
+  padding-left: 1.2rem;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 22%;
+}
+
+/*# sourceMappingURL=style.css.map */

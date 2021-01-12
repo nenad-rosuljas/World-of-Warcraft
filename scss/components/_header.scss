@@ -1,0 +1,83 @@
+.c-header__container {
+  background-image: url("/images/img-bg-header.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.c-header__container-inner {
+  height: 97%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-header__text {
+  color: $color_headings;
+  font-family: $font_text_medium;
+}
+
+.c-header__text-above {
+  padding-bottom: 1.8rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+  &:after {
+    content: "";
+    border-bottom: 2px solid $color_border2;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 75px;
+    transform: translate(-50%);
+  }
+}
+
+.c-header__headline {
+  font-family: $font_heading;
+  color: white;
+  text-transform: uppercase;
+  margin-bottom: 0.1rem;
+  font-size: 2rem;
+  span{
+    font-size: 2rem;
+    color: $color_headings;
+    border-right: 1px solid $color_border1;
+    padding-right: 0.4rem;
+    margin-right: 0.4rem;
+  }
+}
+
+.c-header__flag-wrap{
+  display: inline-flex;
+  margin: 1rem 0;
+}
+
+.c-header__flag--red {
+  border: 1px solid transparent;
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: $color_flag-item1;
+}
+.c-header__flag--orange { 
+  @extend .c-header__flag--red;
+  background-color: $color_flag-item2;
+}
+
+.c-header__flag--green { 
+  @extend .c-header__flag--red;
+  background-color: $color_flag-item3;
+}
+
+.c-header__side {
+  font-family: $font_text_light;
+  text-transform: uppercase;
+  color: $color_text;
+  transform: rotate(-90deg);
+  font-size: 0.5rem;
+  border-bottom: 2px solid $color_border2;
+  padding-left: 1.2rem;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  left: 5%;
+  bottom: 22%;
+}
