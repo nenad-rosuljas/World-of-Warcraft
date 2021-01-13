@@ -1,0 +1,22 @@
+.c-flag-wrap {
+  display: inline-flex;
+  margin: 1rem 0;
+}
+
+.c-flag {
+  border: 1px solid transparent;
+  height: 0.6875rem;
+  width: 0.6875rem;
+}
+
+.c-flag--red {
+  background-color: $color-red-primary;
+}
+
+.c-flag--orange {
+  background-color: $color-orange-primary;
+}
+
+.c-flag--green {
+  background-color: $color-green-primary;
+}

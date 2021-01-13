@@ -33,12 +33,16 @@
 }
 
 .c-header__headline {
-  margin-bottom: -2.5rem;
+  height: 4rem;
   font-family: $font-primary;
   color: $color-white-primary;
   text-transform: uppercase;
   font-size: 3.75rem;
   line-height: 1.84;
+
+  &:last-of-type {
+    margin-bottom: 2rem;
+  }
 
   span{
     font-size: 3.75rem;
@@ -58,28 +62,6 @@
       margin-bottom: 1.5rem;
     }
   }
-}
-
-.c-header__flag-wrap{
-  display: inline-flex;
-  margin: 3rem 0 2rem 0;
-}
-
-.c-header__flag {
-  border: 1px solid transparent;
-  height: 0.6875rem;
-  width: 0.6875rem;
-}
-
-.c-header__flag--red {
-  background-color: $color-red-primary;
-}
-.c-header__flag--orange { 
-  background-color: $color-orange-primary;
-}
-
-.c-header__flag--green { 
-  background-color: $color-green-primary;
 }
 
 .c-header__side {

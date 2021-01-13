@@ -58,12 +58,15 @@
 }
 
 .c-header__headline {
-  margin-bottom: -2.5rem;
+  height: 4rem;
   font-family: "Cairo Bold", sans-serif;
   color: white;
   text-transform: uppercase;
   font-size: 3.75rem;
   line-height: 1.84;
+}
+.c-header__headline:last-of-type {
+  margin-bottom: 2rem;
 }
 .c-header__headline span {
   font-size: 3.75rem;
@@ -83,29 +86,6 @@
   margin-bottom: 1.5rem;
 }
 
-.c-header__flag-wrap {
-  display: inline-flex;
-  margin: 3rem 0 2rem 0;
-}
-
-.c-header__flag {
-  border: 1px solid transparent;
-  height: 0.6875rem;
-  width: 0.6875rem;
-}
-
-.c-header__flag--red {
-  background-color: #E74315;
-}
-
-.c-header__flag--orange {
-  background-color: #FFB86C;
-}
-
-.c-header__flag--green {
-  background-color: #50FA7B;
-}
-
 .c-header__side {
   font-family: "Roboto Light", sans-serif;
   text-transform: uppercase;
@@ -121,6 +101,135 @@
   bottom: 0;
   margin-left: 6rem;
   margin-bottom: 12.9375rem;
+}
+
+.c-affixes {
+  background-image: url("/images/img-bg-affixes.png");
+  background-size: cover;
+  height: 86rem;
+}
+
+.c-affixes__container--first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.c-affixes__container--first :after {
+  content: "";
+  border-bottom: 1px solid #6F6F6F;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.c-affixes__headline {
+  font-size: 3.125rem;
+  line-height: 1.874;
+  font-family: "Cairo Bold", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 6rem;
+}
+
+.c-affixes__legend-text {
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: "Roboto Regular", sans-serif;
+  color: #BCBCBC;
+  margin: 1rem 0;
+}
+
+.c-affixes__legend-group {
+  display: inline-flex;
+}
+
+.c-affixes__legend {
+  border: 1px solid transparent;
+  height: 2.5rem;
+  width: 11.06rem;
+  color: white;
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: "Roboto Regular", sans-serif;
+  text-align: center;
+  padding: 0.5rem 0;
+}
+.c-affixes__legend:not(:last-child) {
+  margin-right: 2rem;
+}
+
+.c-affixes__legend--green {
+  background-color: #50FA7B;
+}
+
+.c-affixes__legend--orange {
+  background-color: #FFB86C;
+}
+
+.c-affixes__legend--red {
+  background-color: #E74315;
+}
+
+.c-affixes__heading--secondary {
+  font-size: 1.875rem;
+  line-height: 1.874rem;
+  font-family: "Cairo Bold", sans-serif;
+  color: #BCBCBC;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+.c-affixes__heading--secondary:after {
+  content: "";
+  border-bottom: 2px solid #E74315;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5.25rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.c-affixes__text {
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: "Roboto Light", sans-serif;
+  color: white;
+  padding-top: 1.5rem;
+  max-width: 58rem;
+  text-align: center;
+}
+.c-affixes__text:last-of-type {
+  padding-bottom: 2.5rem;
+}
+
+.c-flag-wrap {
+  display: inline-flex;
+  margin: 1rem 0;
+}
+
+.c-flag {
+  border: 1px solid transparent;
+  height: 0.6875rem;
+  width: 0.6875rem;
+}
+
+.c-flag--red {
+  background-color: #E74315;
+}
+
+.c-flag--orange {
+  background-color: #FFB86C;
+}
+
+.c-flag--green {
+  background-color: #50FA7B;
 }
 
 /*# sourceMappingURL=style.css.map */

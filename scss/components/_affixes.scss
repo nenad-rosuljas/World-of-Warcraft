@@ -1,0 +1,106 @@
+.c-affixes {
+  background-image: url('/images/img-bg-affixes.png');
+  background-size: cover;
+  height: 86rem;
+}
+
+.c-affixes__container--first {
+  @include flex-column-center;
+  position: relative;
+
+  :after {
+    content: "";
+    border-bottom: 1px solid $color-grey-secondary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.c-affixes__headline {
+  font-size: 3.125rem;
+  line-height: 1.874;
+  font-family: $font-primary;
+  color: $color-white-primary;
+  text-transform: uppercase;
+  margin-top: 6rem;
+}
+
+.c-affixes__legend-text{
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: $font-secondary-regular;
+  color: $color-grey-primary;
+  margin: 1rem 0;
+}
+
+.c-affixes__legend-group {
+  display: inline-flex;
+}
+
+.c-affixes__legend {
+  border: 1px solid transparent;
+  height: 2.5rem;
+  width: 11.06rem;
+  color: $color-white-primary;
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: $font-secondary-regular;
+  text-align: center;
+  padding: 0.5rem 0;
+  
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+
+.c-affixes__legend--green {
+  background-color: $color-green-primary;
+}
+
+.c-affixes__legend--orange {
+  background-color: $color-orange-primary;
+}
+
+.c-affixes__legend--red {
+  background-color: $color-red-primary;
+}
+
+.c-affixes__heading--secondary {
+  font-size: 1.875rem;
+  line-height: 1.874rem;
+  font-family: $font-primary;
+  color: $color-grey-primary;
+  text-transform: uppercase;
+  margin-top: 4rem;
+  position: relative;
+  padding-bottom: 2rem;
+
+  &:after {
+    content: "";
+    border-bottom: 2px solid $color-red-primary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5.25rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.c-affixes__text {
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: $font-secondary-light;
+  color: $color-white-primary;
+  padding-top: 1.5rem;
+  max-width: 58rem;
+  text-align: center;
+  
+  &:last-of-type {
+    padding-bottom: 2.5rem;
+  }
+}
