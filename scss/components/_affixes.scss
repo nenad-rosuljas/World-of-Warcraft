@@ -4,10 +4,12 @@
   height: 86rem;
 }
 
+// FIRST CONTAINER
+
 .c-affixes__container--first {
   @include flex-column-center;
   position: relative;
-
+  
   :after {
     content: "";
     border-bottom: 1px solid $color-grey-secondary;
@@ -102,5 +104,131 @@
   
   &:last-of-type {
     padding-bottom: 2.5rem;
+  }
+}
+
+// SECOND CONTAINER
+
+.c-affixes__container--second {
+  @include flex-column-center;
+  position: relative;
+
+  .c-affixes__headline {
+    margin-top: 1rem;
+  }
+
+  &:after {
+    content: "";
+    border-bottom: 1px solid $color-grey-secondary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 75rem;
+    margin-bottom: -6rem;
+    margin-left: 50%;
+    transform: translate(-50%);
+  }
+}
+
+.c-affixes__note {
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: $font-secondary-medium;
+  color: $color-grey-primary;
+  text-transform: uppercase;
+  font-style: italic;
+  margin-top: 1rem;;
+  margin-bottom: 2.5rem;
+}
+
+.c-affixes__cards-group {
+  display: inline-flex;
+}
+
+.c-affixes__card {            //OVO CE BITI UNIVERZALNA KARTICA
+  width: 30.5rem;
+  height: 16.6rem;
+  padding: 2rem ;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &:first-of-type {
+    margin-right: 2.3rem;
+  }
+
+  .c-affixes__card-heading {
+    font-size: 1.875rem;
+    line-height: 1.874;
+    font-family: $font-primary;
+    color: $color-red-primary;
+  }
+
+  .c-affixes__card-text {
+    font-size: 1.125rem;
+    line-height: 1.17;
+    font-family: $font-secondary-regular;
+    color: $color-white-primary;
+    margin: 1rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      border-bottom: 2px solid $color-red-primary;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 5.25rem;
+      margin-left: 50%;
+      margin-bottom: -1rem;
+      transform: translate(-50%);
+    }
+  }
+
+  .c-affixes__card-note {
+    font-size: 0.875rem;
+    line-height: 1.17;
+    font-family: $font-secondary-regular;
+    color: $color-grey-primary;
+    font-style: italic;
+    margin-top: 1rem;
+  }
+}
+
+.c-affixes__card--ordinary {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
+  position: relative;
+
+  .c-affixes__img--pointer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 2.55rem;
+    margin-top: 2.25rem;
+  }
+}
+
+
+.c-affixes__card--accent {
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid $color-red-primary;
+  box-shadow: 0 0.25rem 0.56rem rgba(255, 0, 0, 0.1);
+  position: relative;
+
+  .c-affixes__top {
+    background-color: $color-red-primary;
+    height: 1.75rem;
+    width: 9.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10.3rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    text-transform: uppercase;
+    padding: 0.2rem;
+    font-family: $font-secondary-medium;
+    color: $color-white-primary;
   }
 }
