@@ -1,0 +1,100 @@
+.c-header {
+  background-image: url("/images/img-bg-header.png");
+  background-size: cover;
+  height: 100vh;
+}
+
+.c-header__container {
+  @include flex-column-center;
+  height: 100%;
+}
+
+.c-header__text {
+  color: $color-grey-primary;
+  font-family: $font-secondary-medium;
+  font-size: 1.125rem;
+  line-height: 1.17;
+}
+
+.c-header__text--above {
+  padding-bottom: 1.8rem;
+  margin-bottom: 0.4rem;
+  position: relative;
+
+  &:after {
+    content: "";
+    border-bottom: 2px solid $color-red-primary;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5.25rem;
+    margin-left: 11rem;
+  }
+}
+
+.c-header__headline {
+  margin-bottom: -2.5rem;
+  font-family: $font-primary;
+  color: $color-white-primary;
+  text-transform: uppercase;
+  font-size: 3.75rem;
+  line-height: 1.84;
+
+  span{
+    font-size: 3.75rem;
+    line-height: 1.84;
+    color: $color-grey-primary;
+    padding-right: 0.8rem;
+    margin-right: 0.8rem;
+    position: relative;
+
+    &:after {
+      content: "";
+      border-right: 1px solid $color-orange-primary;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 3.56rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+}
+
+.c-header__flag-wrap{
+  display: inline-flex;
+  margin: 3rem 0 2rem 0;
+}
+
+.c-header__flag {
+  border: 1px solid transparent;
+  height: 0.6875rem;
+  width: 0.6875rem;
+}
+
+.c-header__flag--red {
+  background-color: $color-red-primary;
+}
+.c-header__flag--orange { 
+  background-color: $color-orange-primary;
+}
+
+.c-header__flag--green { 
+  background-color: $color-green-primary;
+}
+
+.c-header__side {
+  font-family: $font-secondary-light;
+  text-transform: uppercase;
+  color: $color-white-primary;
+  transform: rotate(-90deg);
+  font-size: 0.87rem;
+  line-height: 1.17;
+  border-bottom: 2px solid $color-red-primary;
+  padding-left: 1.9rem;
+  padding-bottom: 0.5rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-left: 6rem;
+  margin-bottom: 12.9375rem;
+}
