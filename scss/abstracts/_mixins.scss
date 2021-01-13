@@ -4,3 +4,10 @@
     box-sizing: border-box;
     font-size: 16px;
 }
+
+@mixin flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
