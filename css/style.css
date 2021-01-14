@@ -594,17 +594,66 @@
   width: 57rem;
   color: white;
   margin-top: 1.5rem;
-  margin-bottom: 4rem;
+  margin-bottom: 4.4rem;
 }
-.c-gconsiderations__container2 .c-gconsiderations__text2 a {
+
+.c-link {
   color: #00fff0;
   font-size: 1.125rem;
   line-height: 1.4;
   font-family: "Roboto Regular", sans-serif;
   text-decoration: none;
 }
-.c-gconsiderations__container2 .c-gconsiderations__text2 a:hover {
+.c-link:hover {
   text-decoration: underline;
+}
+
+.c-footer__container1 {
+  background-color: #000000;
+  height: 19.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.c-footer__message,
+.c-footer__contact {
+  font-size: 1.125rem;
+  line-height: 1.17;
+  color: white;
+}
+
+.c-footer__message {
+  font-family: "Roboto Medium", sans-serif;
+  padding-bottom: 3rem;
+}
+
+.c-footer__contact {
+  display: inline-flex;
+  list-style: none;
+  color: white;
+  font-family: "Roboto Regular", sans-serif;
+}
+.c-footer__contact li {
+  padding: 2rem 0;
+}
+.c-footer__contact li:not(:first-of-type) {
+  padding-left: 10rem;
+}
+
+.c-footer__container2 {
+  background-color: #383838;
+  height: 3.6rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.c-footer__container2 .c-footer__comment {
+  color: white;
+  font-family: "Roboto Regular", sans-serif;
+  margin-left: -15rem;
 }
 
 /*# sourceMappingURL=style.css.map */

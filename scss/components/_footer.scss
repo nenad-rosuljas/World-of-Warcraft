@@ -1,0 +1,42 @@
+.c-footer__container1 {
+  background-color: $color-black-secondary;
+  height: 19.3rem;
+  @include flex-column-center;
+}
+
+.c-footer__message,
+.c-footer__contact {
+  font-size: 1.125rem;
+  line-height: 1.17;
+  color: $color-white-primary;
+}
+.c-footer__message {
+  font-family: $font-secondary-medium;
+  padding-bottom: 3rem;
+}
+
+.c-footer__contact {
+  display: inline-flex;
+  list-style: none;
+  color: $color-white-primary;
+  font-family: $font-secondary-regular;
+
+  li {
+    padding: 2rem 0;
+    &:not(:first-of-type) {
+      padding-left: 10rem;
+    }
+  }
+}
+
+.c-footer__container2 {
+  background-color: $color-black-primary;
+  height: 3.6rem;
+  @include flex-column-center;
+
+  .c-footer__comment {
+    color: $color-white-primary;
+    font-family: $font-secondary-regular;
+    margin-left: -15rem;
+  }
+}

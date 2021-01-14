@@ -1,13 +1,12 @@
-@import 'abstracts/mixins';
-@import 'abstracts/variables';
+@import "abstracts/mixins";
+@import "abstracts/variables";
 
-@import 'base/fonts';
-@import 'base/reset';
+@import "base/fonts";
+@import "base/reset";
 
-@import 'components/header';
-@import 'components/affixes';
-@import 'components/flag';
-@import 'components/affixes3';
-@import 'components/gconsiderations';
-
-
+@import "components/header";
+@import "components/affixes";
+@import "components/flag";
+@import "components/affixes3";
+@import "components/gconsiderations";
+@import "components/footer";
