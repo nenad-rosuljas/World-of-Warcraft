@@ -30,10 +30,21 @@
   }
 }
 
+.c-footer__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: $color-turquoise-primary;
+  text-decoration: none;
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
 .c-footer__container-two {
   background-color: $color-black-primary;
   height: 3.6rem;
   @include flex-column-center;
+  position: relative;
 
   .c-footer__comment {
     color: $color-white-primary;

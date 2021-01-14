@@ -4,6 +4,42 @@
   height: 100vh;
 }
 
+.c-header__nav {
+  background: $color-grey-secondary;
+  height: 4rem;
+  border-radius: 0 0.3rem 0.3rem 0;
+}
+
+.c-header__nav-list {
+  display: inline-flex;
+  list-style: none;
+
+  li {
+    padding: 0 2rem;
+
+    &:not(:first-of-type, :last-of-type) {
+      padding: 0 3rem;
+    }
+
+    &:hover {
+      &:not(:last-of-type) {
+        background-color: $color-black-primary;
+        transition: 0.5s;
+        border-radius: 0.3rem;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2.2rem;
+    line-height: 1.87;
+    font-family: $font-primary;
+    color: $color-white-primary;
+  }
+}
+
 .c-header__container {
   @include flex-column-center;
   height: 100%;
@@ -44,7 +80,7 @@
     margin-bottom: 2rem;
   }
 
-  span{
+  span {
     font-size: 3.75rem;
     line-height: 1.84;
     color: $color-grey-primary;

@@ -1,8 +1,9 @@
 @mixin main {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 16px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 @mixin flex-column-center {
