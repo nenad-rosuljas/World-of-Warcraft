@@ -100,7 +100,7 @@
   left: 0;
   bottom: 0;
   margin-left: 5.5rem;
-  margin-bottom: 12.5rem;
+  margin-bottom: 13.5rem;
 }
 
 .c-affixes {
@@ -158,9 +158,6 @@
   font-family: "Roboto Regular", sans-serif;
   text-align: center;
   padding: 0.5rem 0;
-}
-.c-affixes__legend:not(:last-child) {
-  margin-right: 2rem;
 }
 
 .c-affixes__legend--green {
@@ -226,7 +223,7 @@
   bottom: 0;
   left: 0;
   width: 75rem;
-  margin-bottom: -6rem;
+  margin-bottom: -5.9rem;
   margin-left: 50%;
   transform: translate(-50%);
 }
@@ -239,7 +236,7 @@
   text-transform: uppercase;
   font-style: italic;
   margin-top: 1rem;
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
 }
 
 .c-affixes__cards-group {
@@ -307,6 +304,9 @@
   margin-top: 1rem;
 }
 
+.c-affixes__card {
+  margin: 1.5rem 2rem;
+}
 .c-affixes__card:first-of-type {
   margin-right: 2.3rem;
 }
@@ -340,6 +340,138 @@
 
 .c-flag--green {
   background-color: #50FA7B;
+}
+
+.c-affixes3 {
+  background: linear-gradient(180deg, #2D2C2F 0%, #2E2D30 0.01%, #131313 100%), #0C0C0C;
+  height: 102rem;
+}
+
+.c-affixes3__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.c-affixes3__container .c-affixes__headline {
+  margin-top: 2rem;
+}
+
+.c-affixes__cards-group1 {
+  margin-top: -2rem;
+}
+.c-affixes__cards-group1 .c-affixes__card {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.c-affixes__cards-group1 .c-affixes__card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
+  border-color: transparent;
+}
+.c-affixes__cards-group1 .c-affixes__card-heading {
+  color: #FFB86C;
+}
+.c-affixes__cards-group1 .c-affixes__card-text:after {
+  border-bottom: 2px solid #FFB86C;
+}
+
+.c-affixes__cards-group2 .c-affixes__card {
+  height: 19.7rem;
+}
+.c-affixes__cards-group2 .c-affixes__card:first-of-type {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+.c-affixes__cards-group2 .c-affixes__card:first-of-type .c-affixes__card-heading {
+  color: #50FA7B;
+}
+.c-affixes__cards-group2 .c-affixes__card:first-of-type .c-affixes__card-text:after {
+  border-bottom: 2px solid #50FA7B;
+}
+.c-affixes__cards-group2 .c-affixes__card:last-of-type {
+  border: 2px solid #FFB86C;
+}
+.c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__top {
+  background-color: #FFB86C;
+}
+.c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__card-heading {
+  color: #FFB86C;
+}
+.c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__card-text:after {
+  border-bottom: 2px solid #FFB86C;
+}
+
+.c-affixes__cards-group2 .c-affixes__card:hover {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
+  border-color: transparent;
+}
+
+.c-affixes3__schedule-title {
+  text-align: center;
+  font-family: "Roboto Regular", sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.17;
+  color: #BCBCBC;
+  text-transform: uppercase;
+  margin-top: 2rem;
+  position: relative;
+}
+.c-affixes3__schedule-title:after {
+  content: "";
+  border-bottom: 2px solid #50FA7B;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5.25rem;
+  margin-left: 50%;
+  margin-bottom: -2rem;
+  transform: translate(-50%);
+}
+
+.c-affixes__schedule {
+  width: 56rem;
+  margin-top: 3.5rem;
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: "Roboto Regular", sans-serif;
+  border-collapse: collapse;
+  position: relative;
+}
+.c-affixes__schedule :after {
+  content: "";
+  border-bottom: 1px solid #6F6F6F;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75rem;
+  margin-left: 50%;
+  margin-bottom: -5rem;
+  transform: translate(-50%);
+}
+.c-affixes__schedule thead {
+  background-color: #50FA7B;
+  color: black;
+}
+.c-affixes__schedule th, .c-affixes__schedule td {
+  height: 2.5rem;
+  width: 14rem;
+  text-align: left;
+  padding-left: 3rem;
+  border: none;
+}
+.c-affixes__schedule tbody tr {
+  color: white;
+  background-color: #6F6F6F;
+}
+.c-affixes__schedule tbody tr:nth-child(odd) {
+  background: rgba(156, 156, 156, 0.2);
+}
+.c-affixes__schedule tbody tr:hover {
+  background-color: #848484;
 }
 
 /*# sourceMappingURL=style.css.map */
