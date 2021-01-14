@@ -145,7 +145,7 @@
   display: inline-flex;
 }
 
-.c-affixes__card {            //OVO CE BITI UNIVERZALNA KARTICA
+.c-affixes__card {
   width: 30.5rem;
   height: 16.6rem;
   padding: 2rem ;
@@ -153,9 +153,24 @@
   display:flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid $color-red-primary;
+  box-shadow: 0 0.25rem 0.56rem rgba(255, 0, 0, 0.1);
+  position: relative;
 
-  &:first-of-type {
-    margin-right: 2.3rem;
+  .c-affixes__top {
+    background-color: $color-red-primary;
+    height: 1.75rem;
+    width: 9.3rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10.4rem;
+    border-radius: 0 0 0.625rem 0.625rem;
+    text-transform: uppercase;
+    padding: 0.2rem;
+    font-family: $font-secondary-medium;
+    color: $color-white-primary;
   }
 
   .c-affixes__card-heading {
@@ -196,39 +211,18 @@
   }
 }
 
-.c-affixes__card--ordinary {
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
-  position: relative;
-
-  .c-affixes__img--pointer {
-    position: absolute;
-    top: 0;
-    right: 0;
-    margin-right: 2.55rem;
-    margin-top: 2.25rem;
+.c-affixes__card {
+  &:first-of-type {
+    margin-right: 2.3rem;
   }
-}
 
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
+    border-color: transparent;
 
-.c-affixes__card--accent {
-  background: rgba(0, 0, 0, 0.5);
-  border: 2px solid $color-red-primary;
-  box-shadow: 0 0.25rem 0.56rem rgba(255, 0, 0, 0.1);
-  position: relative;
-
-  .c-affixes__top {
-    background-color: $color-red-primary;
-    height: 1.75rem;
-    width: 9.3rem;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin-left: 10.3rem;
-    border-radius: 0 0 0.625rem 0.625rem;
-    text-transform: uppercase;
-    padding: 0.2rem;
-    font-family: $font-secondary-medium;
-    color: $color-white-primary;
+    .c-affixes__top {
+      display: none;
+    }
   }
 }

@@ -99,8 +99,8 @@
   position: absolute;
   left: 0;
   bottom: 0;
-  margin-left: 6rem;
-  margin-bottom: 12.9375rem;
+  margin-left: 5.5rem;
+  margin-bottom: 12.5rem;
 }
 
 .c-affixes {
@@ -254,9 +254,24 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background: rgba(0, 0, 0, 0.5);
+  border: 2px solid #E74315;
+  box-shadow: 0 0.25rem 0.56rem rgba(255, 0, 0, 0.1);
+  position: relative;
 }
-.c-affixes__card:first-of-type {
-  margin-right: 2.3rem;
+.c-affixes__card .c-affixes__top {
+  background-color: #E74315;
+  height: 1.75rem;
+  width: 9.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 10.4rem;
+  border-radius: 0 0 0.625rem 0.625rem;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  font-family: "Roboto Medium", sans-serif;
+  color: white;
 }
 .c-affixes__card .c-affixes__card-heading {
   font-size: 1.875rem;
@@ -292,38 +307,16 @@
   margin-top: 1rem;
 }
 
-.c-affixes__card--ordinary {
+.c-affixes__card:first-of-type {
+  margin-right: 2.3rem;
+}
+.c-affixes__card:hover {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
-  position: relative;
+  border-color: transparent;
 }
-.c-affixes__card--ordinary .c-affixes__img--pointer {
-  position: absolute;
-  top: 0;
-  right: 0;
-  margin-right: 2.55rem;
-  margin-top: 2.25rem;
-}
-
-.c-affixes__card--accent {
-  background: rgba(0, 0, 0, 0.5);
-  border: 2px solid #E74315;
-  box-shadow: 0 0.25rem 0.56rem rgba(255, 0, 0, 0.1);
-  position: relative;
-}
-.c-affixes__card--accent .c-affixes__top {
-  background-color: #E74315;
-  height: 1.75rem;
-  width: 9.3rem;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 10.3rem;
-  border-radius: 0 0 0.625rem 0.625rem;
-  text-transform: uppercase;
-  padding: 0.2rem;
-  font-family: "Roboto Medium", sans-serif;
-  color: white;
+.c-affixes__card:hover .c-affixes__top {
+  display: none;
 }
 
 .c-flag-wrap {
