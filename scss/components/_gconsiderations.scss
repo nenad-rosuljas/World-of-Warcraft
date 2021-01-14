@@ -6,11 +6,11 @@
 
 // FIRST CONTAINER
 
-.c-gconsiderations__container1 {
+.c-gconsiderations__container-one {
   @include flex-column-center;
   position: relative;
 
-  :after {
+  &:after {
     content: "";
     border-bottom: 1px solid $color-grey-secondary;
     position: absolute;
@@ -31,7 +31,7 @@
   margin-top: 1.9rem;
 }
 
-.c-gconsiderations__text1 {
+.c-gconsiderations__text-one {
   font-size: 1.125rem;
   line-height: 1.17;
   font-family: $font-secondary-regular;
@@ -79,11 +79,11 @@
 
 // SECOND CONTAINER
 
-.c-gconsiderations__container2 {
+.c-gconsiderations__container-two {
   @include flex-column-center;
   position: relative;
 
-  :after {
+  &:after {
     content: "";
     border-bottom: 1px solid $color-grey-secondary;
     position: absolute;
@@ -116,7 +116,8 @@
       width: 5.25rem;
     }
   }
-  .c-gconsiderations__text2 {
+
+  .c-gconsiderations__text-two {
     font-size: 1.125rem;
     line-height: 1.4;
     font-family: $font-secondary-regular;

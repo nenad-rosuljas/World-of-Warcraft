@@ -342,75 +342,75 @@
   background-color: #50fa7b;
 }
 
-.c-affixes3 {
-  background: linear-gradient(180deg, #2D2C2F 0%, #2E2D30 0.01%, #131313 100%), #0C0C0C;
+.c-affixes-three {
+  background: linear-gradient(180deg, #2d2c2f 0%, #2e2d30 0.01%, #131313 100%), #0c0c0c;
   height: 102rem;
 }
 
-.c-affixes3__container {
+.c-affixes-three__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.c-affixes3__container .c-affixes__headline {
+.c-affixes-three__container .c-affixes__headline {
   margin-top: 2rem;
 }
 
-.c-affixes__cards-group1 {
+.c-affixes__cards-group-one {
   margin-top: -2rem;
 }
-.c-affixes__cards-group1 .c-affixes__card {
+.c-affixes__cards-group-one .c-affixes__card {
   background: none;
   border: none;
   box-shadow: none;
 }
-.c-affixes__cards-group1 .c-affixes__card:hover {
+.c-affixes__cards-group-one .c-affixes__card:hover {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
   border-color: transparent;
 }
-.c-affixes__cards-group1 .c-affixes__card-heading {
+.c-affixes__cards-group-one .c-affixes__card-heading {
   color: #ffb86c;
 }
-.c-affixes__cards-group1 .c-affixes__card-text:after {
+.c-affixes__cards-group-one .c-affixes__card-text:after {
   border-bottom: 2px solid #ffb86c;
 }
 
-.c-affixes__cards-group2 .c-affixes__card {
+.c-affixes__cards-group-two .c-affixes__card {
   height: 19.7rem;
 }
-.c-affixes__cards-group2 .c-affixes__card:first-of-type {
+.c-affixes__cards-group-two .c-affixes__card:first-of-type {
   background: none;
   border: none;
   box-shadow: none;
 }
-.c-affixes__cards-group2 .c-affixes__card:first-of-type .c-affixes__card-heading {
+.c-affixes__cards-group-two .c-affixes__card:first-of-type .c-affixes__card-heading {
   color: #50fa7b;
 }
-.c-affixes__cards-group2 .c-affixes__card:first-of-type .c-affixes__card-text:after {
+.c-affixes__cards-group-two .c-affixes__card:first-of-type .c-affixes__card-text:after {
   border-bottom: 2px solid #50fa7b;
 }
-.c-affixes__cards-group2 .c-affixes__card:last-of-type {
+.c-affixes__cards-group-two .c-affixes__card:last-of-type {
   border: 2px solid #ffb86c;
 }
-.c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__top {
+.c-affixes__cards-group-two .c-affixes__card:last-of-type .c-affixes__top {
   background-color: #ffb86c;
 }
-.c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__card-heading {
+.c-affixes__cards-group-two .c-affixes__card:last-of-type .c-affixes__card-heading {
   color: #ffb86c;
 }
-.c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__card-text:after {
+.c-affixes__cards-group-two .c-affixes__card:last-of-type .c-affixes__card-text:after {
   border-bottom: 2px solid #ffb86c;
 }
 
-.c-affixes__cards-group2 .c-affixes__card:hover {
+.c-affixes__cards-group-two .c-affixes__card:hover {
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
   border-color: transparent;
 }
 
-.c-affixes3__schedule-title {
+.c-affixes-three__schedule-title {
   text-align: center;
   font-family: "Roboto Regular", sans-serif;
   font-size: 1.125rem;
@@ -420,7 +420,7 @@
   margin-top: 2rem;
   position: relative;
 }
-.c-affixes3__schedule-title:after {
+.c-affixes-three__schedule-title:after {
   content: "";
   border-bottom: 2px solid #50fa7b;
   position: absolute;
@@ -441,7 +441,7 @@
   border-collapse: collapse;
   position: relative;
 }
-.c-affixes__schedule :after {
+.c-affixes__schedule:after {
   content: "";
   border-bottom: 1px solid #6f6f6f;
   position: absolute;
@@ -456,7 +456,8 @@
   background-color: #50fa7b;
   color: black;
 }
-.c-affixes__schedule th, .c-affixes__schedule td {
+.c-affixes__schedule th,
+.c-affixes__schedule td {
   height: 2.5rem;
   width: 14rem;
   text-align: left;
@@ -480,14 +481,14 @@
   height: 76rem;
 }
 
-.c-gconsiderations__container1 {
+.c-gconsiderations__container-one {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.c-gconsiderations__container1 :after {
+.c-gconsiderations__container-one:after {
   content: "";
   border-bottom: 1px solid #6f6f6f;
   position: absolute;
@@ -507,7 +508,7 @@
   margin-top: 1.9rem;
 }
 
-.c-gconsiderations__text1 {
+.c-gconsiderations__text-one {
   font-size: 1.125rem;
   line-height: 1.17;
   font-family: "Roboto Regular", sans-serif;
@@ -516,15 +517,15 @@
   color: white;
   margin-top: 1.5rem;
 }
-.c-gconsiderations__text1:nth-of-type(2) {
+.c-gconsiderations__text-one:nth-of-type(2) {
   margin-top: 4rem;
 }
-.c-gconsiderations__text1:first-of-type {
+.c-gconsiderations__text-one:first-of-type {
   font-family: "Roboto Medium", sans-serif;
   color: #bcbcbc;
   position: relative;
 }
-.c-gconsiderations__text1:first-of-type:after {
+.c-gconsiderations__text-one:first-of-type:after {
   content: "";
   border-bottom: 2px solid #50fa7b;
   position: absolute;
@@ -549,14 +550,14 @@
   padding-left: 0.5rem;
 }
 
-.c-gconsiderations__container2 {
+.c-gconsiderations__container-two {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
 }
-.c-gconsiderations__container2 :after {
+.c-gconsiderations__container-two:after {
   content: "";
   border-bottom: 1px solid #6f6f6f;
   position: absolute;
@@ -566,7 +567,7 @@
   margin-left: 50%;
   transform: translate(-50%);
 }
-.c-gconsiderations__container2 .c-gconsiderations__heading--secondary {
+.c-gconsiderations__container-two .c-gconsiderations__heading--secondary {
   font-size: 1.875rem;
   line-height: 1.874rem;
   font-family: "Cairo Bold", sans-serif;
@@ -578,7 +579,7 @@
   padding-bottom: 2rem;
   align-self: flex-start;
 }
-.c-gconsiderations__container2 .c-gconsiderations__heading--secondary:after {
+.c-gconsiderations__container-two .c-gconsiderations__heading--secondary:after {
   content: "";
   border-bottom: 2px solid #50fa7b;
   position: absolute;
@@ -587,7 +588,7 @@
   margin-left: 34rem;
   width: 5.25rem;
 }
-.c-gconsiderations__container2 .c-gconsiderations__text2 {
+.c-gconsiderations__container-two .c-gconsiderations__text-two {
   font-size: 1.125rem;
   line-height: 1.4;
   font-family: "Roboto Regular", sans-serif;
@@ -608,7 +609,7 @@
   text-decoration: underline;
 }
 
-.c-footer__container1 {
+.c-footer__container-one {
   background-color: #000000;
   height: 19.3rem;
   display: flex;
@@ -642,7 +643,7 @@
   padding-left: 10rem;
 }
 
-.c-footer__container2 {
+.c-footer__container-two {
   background-color: #383838;
   height: 3.6rem;
   display: flex;
@@ -650,7 +651,7 @@
   justify-content: center;
   align-items: center;
 }
-.c-footer__container2 .c-footer__comment {
+.c-footer__container-two .c-footer__comment {
   color: white;
   font-family: "Roboto Regular", sans-serif;
   margin-left: -15rem;

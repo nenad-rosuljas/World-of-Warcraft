@@ -1,43 +1,44 @@
-.c-affixes3 {
-  background: linear-gradient(180deg, #2D2C2F 0%, #2E2D30 0.01%, #131313 100%), #0C0C0C;
+.c-affixes-three {
+  background: linear-gradient(180deg, #2d2c2f 0%, #2e2d30 0.01%, #131313 100%),
+    #0c0c0c;
   height: 102rem;
 }
 
-.c-affixes3__container {
+.c-affixes-three__container {
   @include flex-column-center;
-  
+
   .c-affixes__headline {
-  margin-top: 2rem;
+    margin-top: 2rem;
   }
 }
 
-.c-affixes__cards-group1 {
+.c-affixes__cards-group-one {
   margin-top: -2rem;
-  .c-affixes__card{
+
+  .c-affixes__card {
     background: none;
     border: none;
     box-shadow: none;
-    
+
     &:hover {
       background: rgba(255, 255, 255, 0.1);
       box-shadow: 0 0.25rem 4.93rem rgba(0, 0, 0, 0.4);
       border-color: transparent;
-    }  
+    }
   }
-  
+
   .c-affixes__card-heading {
     color: $color-orange-primary;
   }
 
   .c-affixes__card-text {
-    
     &:after {
       border-bottom: 2px solid $color-orange-primary;
     }
   }
 }
 
-.c-affixes__cards-group2 {
+.c-affixes__cards-group-two {
   .c-affixes__card {
     height: 19.7rem;
 
@@ -51,7 +52,6 @@
       }
 
       .c-affixes__card-text {
-    
         &:after {
           border-bottom: 2px solid $color-green-primary;
         }
@@ -59,7 +59,7 @@
     }
 
     &:last-of-type {
-      border: 2px solid $color-orange-primary;;
+      border: 2px solid $color-orange-primary;
 
       .c-affixes__top {
         background-color: $color-orange-primary;
@@ -70,7 +70,6 @@
       }
 
       .c-affixes__card-text {
-    
         &:after {
           border-bottom: 2px solid $color-orange-primary;
         }
@@ -79,7 +78,7 @@
   }
 }
 
-.c-affixes__cards-group2 {
+.c-affixes__cards-group-two {
   .c-affixes__card {
     &:hover {
       background: rgba(255, 255, 255, 0.1);
@@ -89,7 +88,7 @@
   }
 }
 
-.c-affixes3__schedule-title {
+.c-affixes-three__schedule-title {
   text-align: center;
   font-family: $font-secondary-regular;
   font-size: 1.125rem;
@@ -121,7 +120,7 @@
   border-collapse: collapse;
   position: relative;
 
-  :after {
+  &:after {
     content: "";
     border-bottom: 1px solid $color-grey-secondary;
     position: absolute;
@@ -137,18 +136,21 @@
     background-color: $color-green-primary;
     color: black;
   }
-  th, td {
+
+  th,
+  td {
     height: 2.5rem;
     width: 14rem;
     text-align: left;
     padding-left: 3rem;
     border: none;
   }
-  tbody{
-    tr{
+
+  tbody {
+    tr {
       color: $color-white-primary;
       background-color: $color-grey-secondary;
-  
+
       &:nth-child(odd) {
         background: rgba(156, 156, 156, 0.2);
       }

@@ -1,4 +1,4 @@
-.c-footer__container1 {
+.c-footer__container-one {
   background-color: $color-black-secondary;
   height: 19.3rem;
   @include flex-column-center;
@@ -10,6 +10,7 @@
   line-height: 1.17;
   color: $color-white-primary;
 }
+
 .c-footer__message {
   font-family: $font-secondary-medium;
   padding-bottom: 3rem;
@@ -29,7 +30,7 @@
   }
 }
 
-.c-footer__container2 {
+.c-footer__container-two {
   background-color: $color-black-primary;
   height: 3.6rem;
   @include flex-column-center;
