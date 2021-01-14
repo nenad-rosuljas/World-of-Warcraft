@@ -36,7 +36,7 @@
 }
 
 .c-header__text {
-  color: #BCBCBC;
+  color: #bcbcbc;
   font-family: "Roboto Medium", sans-serif;
   font-size: 1.125rem;
   line-height: 1.17;
@@ -49,7 +49,7 @@
 }
 .c-header__text--above:after {
   content: "";
-  border-bottom: 2px solid #E74315;
+  border-bottom: 2px solid #e74315;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -71,14 +71,14 @@
 .c-header__headline span {
   font-size: 3.75rem;
   line-height: 1.84;
-  color: #BCBCBC;
+  color: #bcbcbc;
   padding-right: 0.8rem;
   margin-right: 0.8rem;
   position: relative;
 }
 .c-header__headline span:after {
   content: "";
-  border-right: 1px solid #FFB86C;
+  border-right: 1px solid #ffb86c;
   position: absolute;
   bottom: 0;
   right: 0;
@@ -93,7 +93,7 @@
   transform: rotate(-90deg);
   font-size: 0.87rem;
   line-height: 1.17;
-  border-bottom: 2px solid #E74315;
+  border-bottom: 2px solid #e74315;
   padding-left: 1.9rem;
   padding-bottom: 0.5rem;
   position: absolute;
@@ -118,7 +118,7 @@
 }
 .c-affixes__container--first :after {
   content: "";
-  border-bottom: 1px solid #6F6F6F;
+  border-bottom: 1px solid #6f6f6f;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -140,7 +140,7 @@
   font-size: 1.125rem;
   line-height: 1.17;
   font-family: "Roboto Regular", sans-serif;
-  color: #BCBCBC;
+  color: #bcbcbc;
   margin: 1rem 0;
 }
 
@@ -161,22 +161,22 @@
 }
 
 .c-affixes__legend--green {
-  background-color: #50FA7B;
+  background-color: #50fa7b;
 }
 
 .c-affixes__legend--orange {
-  background-color: #FFB86C;
+  background-color: #ffb86c;
 }
 
 .c-affixes__legend--red {
-  background-color: #E74315;
+  background-color: #e74315;
 }
 
 .c-affixes__heading--secondary {
   font-size: 1.875rem;
   line-height: 1.874rem;
   font-family: "Cairo Bold", sans-serif;
-  color: #BCBCBC;
+  color: #bcbcbc;
   text-transform: uppercase;
   margin-top: 4rem;
   position: relative;
@@ -184,7 +184,7 @@
 }
 .c-affixes__heading--secondary:after {
   content: "";
-  border-bottom: 2px solid #E74315;
+  border-bottom: 2px solid #e74315;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -218,7 +218,7 @@
 }
 .c-affixes__container--second:after {
   content: "";
-  border-bottom: 1px solid #6F6F6F;
+  border-bottom: 1px solid #6f6f6f;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -232,7 +232,7 @@
   font-size: 1.125rem;
   line-height: 1.17;
   font-family: "Roboto Medium", sans-serif;
-  color: #BCBCBC;
+  color: #bcbcbc;
   text-transform: uppercase;
   font-style: italic;
   margin-top: 1rem;
@@ -252,12 +252,12 @@
   flex-direction: column;
   justify-content: center;
   background: rgba(0, 0, 0, 0.5);
-  border: 2px solid #E74315;
+  border: 2px solid #e74315;
   box-shadow: 0 0.25rem 0.56rem rgba(255, 0, 0, 0.1);
   position: relative;
 }
 .c-affixes__card .c-affixes__top {
-  background-color: #E74315;
+  background-color: #e74315;
   height: 1.75rem;
   width: 9.3rem;
   position: absolute;
@@ -274,7 +274,7 @@
   font-size: 1.875rem;
   line-height: 1.874;
   font-family: "Cairo Bold", sans-serif;
-  color: #E74315;
+  color: #e74315;
 }
 .c-affixes__card .c-affixes__card-text {
   font-size: 1.125rem;
@@ -286,7 +286,7 @@
 }
 .c-affixes__card .c-affixes__card-text:after {
   content: "";
-  border-bottom: 2px solid #E74315;
+  border-bottom: 2px solid #e74315;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -299,7 +299,7 @@
   font-size: 0.875rem;
   line-height: 1.17;
   font-family: "Roboto Regular", sans-serif;
-  color: #BCBCBC;
+  color: #bcbcbc;
   font-style: italic;
   margin-top: 1rem;
 }
@@ -331,15 +331,15 @@
 }
 
 .c-flag--red {
-  background-color: #E74315;
+  background-color: #e74315;
 }
 
 .c-flag--orange {
-  background-color: #FFB86C;
+  background-color: #ffb86c;
 }
 
 .c-flag--green {
-  background-color: #50FA7B;
+  background-color: #50fa7b;
 }
 
 .c-affixes3 {
@@ -371,10 +371,10 @@
   border-color: transparent;
 }
 .c-affixes__cards-group1 .c-affixes__card-heading {
-  color: #FFB86C;
+  color: #ffb86c;
 }
 .c-affixes__cards-group1 .c-affixes__card-text:after {
-  border-bottom: 2px solid #FFB86C;
+  border-bottom: 2px solid #ffb86c;
 }
 
 .c-affixes__cards-group2 .c-affixes__card {
@@ -386,22 +386,22 @@
   box-shadow: none;
 }
 .c-affixes__cards-group2 .c-affixes__card:first-of-type .c-affixes__card-heading {
-  color: #50FA7B;
+  color: #50fa7b;
 }
 .c-affixes__cards-group2 .c-affixes__card:first-of-type .c-affixes__card-text:after {
-  border-bottom: 2px solid #50FA7B;
+  border-bottom: 2px solid #50fa7b;
 }
 .c-affixes__cards-group2 .c-affixes__card:last-of-type {
-  border: 2px solid #FFB86C;
+  border: 2px solid #ffb86c;
 }
 .c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__top {
-  background-color: #FFB86C;
+  background-color: #ffb86c;
 }
 .c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__card-heading {
-  color: #FFB86C;
+  color: #ffb86c;
 }
 .c-affixes__cards-group2 .c-affixes__card:last-of-type .c-affixes__card-text:after {
-  border-bottom: 2px solid #FFB86C;
+  border-bottom: 2px solid #ffb86c;
 }
 
 .c-affixes__cards-group2 .c-affixes__card:hover {
@@ -415,14 +415,14 @@
   font-family: "Roboto Regular", sans-serif;
   font-size: 1.125rem;
   line-height: 1.17;
-  color: #BCBCBC;
+  color: #bcbcbc;
   text-transform: uppercase;
   margin-top: 2rem;
   position: relative;
 }
 .c-affixes3__schedule-title:after {
   content: "";
-  border-bottom: 2px solid #50FA7B;
+  border-bottom: 2px solid #50fa7b;
   position: absolute;
   bottom: 0;
   left: 0;
@@ -443,17 +443,17 @@
 }
 .c-affixes__schedule :after {
   content: "";
-  border-bottom: 1px solid #6F6F6F;
+  border-bottom: 1px solid #6f6f6f;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 75rem;
   margin-left: 50%;
-  margin-bottom: -5rem;
+  margin-bottom: -6.2rem;
   transform: translate(-50%);
 }
 .c-affixes__schedule thead {
-  background-color: #50FA7B;
+  background-color: #50fa7b;
   color: black;
 }
 .c-affixes__schedule th, .c-affixes__schedule td {
@@ -465,13 +465,146 @@
 }
 .c-affixes__schedule tbody tr {
   color: white;
-  background-color: #6F6F6F;
+  background-color: #6f6f6f;
 }
 .c-affixes__schedule tbody tr:nth-child(odd) {
   background: rgba(156, 156, 156, 0.2);
 }
 .c-affixes__schedule tbody tr:hover {
   background-color: #848484;
+}
+
+.c-gconsiderations {
+  background-image: url("/images/img-bg-gconsiderations.png");
+  background-size: cover;
+  height: 76rem;
+}
+
+.c-gconsiderations__container1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.c-gconsiderations__container1 :after {
+  content: "";
+  border-bottom: 1px solid #6f6f6f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+
+.c-gconsiderations__headline {
+  font-size: 3.125rem;
+  line-height: 1.874;
+  font-family: "Cairo Bold", sans-serif;
+  color: white;
+  text-transform: uppercase;
+  margin-top: 1.9rem;
+}
+
+.c-gconsiderations__text1 {
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: "Roboto Regular", sans-serif;
+  width: 57rem;
+  text-align: center;
+  color: white;
+  margin-top: 1.5rem;
+}
+.c-gconsiderations__text1:nth-of-type(2) {
+  margin-top: 4rem;
+}
+.c-gconsiderations__text1:first-of-type {
+  font-family: "Roboto Medium", sans-serif;
+  color: #bcbcbc;
+  position: relative;
+}
+.c-gconsiderations__text1:first-of-type:after {
+  content: "";
+  border-bottom: 2px solid #50fa7b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 5.25rem;
+  margin-left: 50%;
+  margin-bottom: -2rem;
+  transform: translate(-50%);
+}
+
+.c-gconsiderations__list {
+  font-size: 1.125rem;
+  line-height: 1.17;
+  font-family: "Roboto Medium", sans-serif;
+  color: #bcbcbc;
+  margin-top: 2.4rem;
+  margin-bottom: 4rem;
+  list-style-image: url("/images/img-list-item.png");
+}
+.c-gconsiderations__list .c-gconsiderations__list-item {
+  padding-left: 0.5rem;
+}
+
+.c-gconsiderations__container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.c-gconsiderations__container2 :after {
+  content: "";
+  border-bottom: 1px solid #6f6f6f;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75rem;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
+.c-gconsiderations__container2 .c-gconsiderations__heading--secondary {
+  font-size: 1.875rem;
+  line-height: 1.874rem;
+  font-family: "Cairo Bold", sans-serif;
+  color: #bcbcbc;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
+  padding-left: 31.2rem;
+  position: relative;
+  padding-bottom: 2rem;
+  align-self: flex-start;
+}
+.c-gconsiderations__container2 .c-gconsiderations__heading--secondary:after {
+  content: "";
+  border-bottom: 2px solid #50fa7b;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-left: 34rem;
+  width: 5.25rem;
+}
+.c-gconsiderations__container2 .c-gconsiderations__text2 {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-family: "Roboto Regular", sans-serif;
+  width: 57rem;
+  color: white;
+  margin-top: 1.5rem;
+  margin-bottom: 4rem;
+}
+.c-gconsiderations__container2 .c-gconsiderations__text2 a {
+  color: #00fff0;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-family: "Roboto Regular", sans-serif;
+  text-decoration: none;
+}
+.c-gconsiderations__container2 .c-gconsiderations__text2 a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=style.css.map */
