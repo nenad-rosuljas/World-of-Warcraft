@@ -1,7 +1,23 @@
 .c-affixes-three {
   background: linear-gradient(180deg, #2d2c2f 0%, #2e2d30 0.01%, #131313 100%),
     #0c0c0c;
-  height: 102rem;
+  height: 99.7rem;
+
+  @include between($tablet, $desktop) {
+    height: 133.7rem;
+  }
+
+  @include between($desktop, $desktop-large) {
+    height: 94.9rem;
+  }
+
+  @include between($desktop-large, $ultra-wide-screen) {
+    height: 95.8rem;
+  }
+
+  @include from($ultra-wide-screen) {
+    height: 99rem;
+  }
 }
 
 .c-affixes-three__container {
@@ -40,7 +56,11 @@
 
 .c-affixes__cards-group-two {
   .c-affixes__card {
-    height: 19.7rem;
+    height: 16.7rem;
+
+    @include from($tablet) {
+      height: 19.7rem;
+    }
 
     &:first-of-type {
       background: none;
@@ -91,12 +111,18 @@
 .c-affixes-three__schedule-title {
   text-align: center;
   font-family: $font-secondary-regular;
-  font-size: 1.125rem;
-  line-height: 1.17;
+  font-size: 0.8rem;
+  line-height: 1;
   color: $color-grey-primary;
   text-transform: uppercase;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   position: relative;
+
+  @include from($tablet) {
+    font-size: 1.125rem;
+    line-height: 1.17;
+    margin-top: 2rem;
+  }
 
   &:after {
     content: "";
@@ -112,13 +138,29 @@
 }
 
 .c-affixes__schedule {
-  width: 56rem;
-  margin-top: 3.5rem;
-  font-size: 1.125rem;
-  line-height: 1.17;
-  font-family: $font-secondary-regular;
+  width: 15rem;
+  margin-top: 3rem;
+  font-size: 0.9rem;
+  line-height: 1;
+  font-family: $font-secondary-light;
   border-collapse: collapse;
   position: relative;
+
+  @include between($tablet, $desktop) {
+    width: 45rem;
+    margin-top: 3rem;
+    font-size: 1rem;
+    line-height: 1;
+    font-family: $font-secondary-regular;
+  }
+
+  @include from($desktop) {
+    width: 56rem;
+    margin-top: 3.5rem;
+    font-size: 1.125rem;
+    line-height: 1.17;
+    font-family: $font-secondary-regular;
+  }
 
   &:after {
     content: "";
@@ -126,10 +168,26 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 75rem;
+    width: 15rem;
     margin-left: 50%;
-    margin-bottom: -6.2rem;
+    margin-bottom: -3.2rem;
     transform: translate(-50%);
+
+    @include between($tablet, $desktop) {
+      width: 40rem;
+    }
+
+    @include between($desktop, $desktop-large) {
+      width: 50rem;
+    }
+
+    @include between($desktop-large, $ultra-wide-screen) {
+      width: 60rem;
+    }
+
+    @include from($ultra-wide-screen) {
+      width: 75rem;
+    }
   }
 
   thead {
@@ -139,11 +197,22 @@
 
   th,
   td {
-    height: 2.5rem;
-    width: 14rem;
+    height: 1rem;
+    width: 3rem;
     text-align: left;
-    padding-left: 3rem;
+    padding-left: 0.1rem;
     border: none;
+    font-size: 0.7rem;
+    line-height: 1;
+
+    @include from($tablet) {
+      height: 2.5rem;
+      width: 14rem;
+      text-align: left;
+      padding-left: 3rem;
+      font-size: unset;
+      line-height: unset;
+    }
   }
 
   tbody {

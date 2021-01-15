@@ -1,7 +1,23 @@
 .c-gconsiderations {
   background-image: url("/images/img-bg-gconsiderations.png");
   background-size: cover;
-  height: 76rem;
+  height: 65.5rem;
+
+  @include between($tablet, $desktop) {
+    height: 66.1rem;
+  }
+
+  @include between($desktop, $desktop-large) {
+    height: 66.6rem;
+  }
+
+  @include between($desktop-large, $ultra-wide-screen) {
+    height: 67.2rem;
+  }
+
+  @include from($ultra-wide-screen) {
+    height: 74.5rem;
+  }
 }
 
 // FIRST CONTAINER
@@ -16,29 +32,77 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 75rem;
+    width: 15rem;
     margin-left: 50%;
     transform: translate(-50%);
+
+    @include between($tablet, $desktop) {
+      width: 40rem;
+    }
+
+    @include between($desktop, $desktop-large) {
+      width: 50rem;
+    }
+
+    @include between($desktop-large, $ultra-wide-screen) {
+      width: 60rem;
+    }
+
+    @include from($ultra-wide-screen) {
+      width: 75rem;
+    }
   }
 }
 
 .c-gconsiderations__headline {
-  font-size: 3.125rem;
-  line-height: 1.874;
+  font-size: 1.5rem;
+  line-height: 0.6;
   font-family: $font-primary;
   color: $color-white-primary;
   text-transform: uppercase;
-  margin-top: 1.9rem;
+  margin-top: 1.3rem;
+
+  @include between($tablet, $desktop-large) {
+    font-size: 2.2rem;
+    line-height: 0.8;
+    margin-top: 2rem;
+  }
+
+  @include between($desktop-large, $ultra-wide-screen) {
+    font-size: 2.6rem;
+    line-height: 1;
+    margin-top: 1.5rem;
+  }
+
+  @include from($ultra-wide-screen) {
+    font-size: 3.125rem;
+    line-height: 1.874;
+    margin-top: 1.9rem;
+  }
 }
 
 .c-gconsiderations__text-one {
-  font-size: 1.125rem;
-  line-height: 1.17;
+  font-size: 0.8rem;
+  line-height: 1;
   font-family: $font-secondary-regular;
-  width: 57rem;
+  width: 15rem;
   text-align: center;
   color: $color-white-primary;
-  margin-top: 1.5rem;
+  margin-top: 0.5rem;
+
+  @include between($tablet, $desktop) {
+    font-size: 1rem;
+    line-height: 1;
+    width: 45rem;
+    margin-top: 1.5rem;
+  }
+
+  @include from($desktop) {
+    font-size: 1.125rem;
+    line-height: 1.17;
+    width: 57rem;
+    margin-top: 1.5rem;
+  }
 
   &:nth-of-type(2) {
     margin-top: 4rem;
@@ -64,16 +128,29 @@
 }
 
 .c-gconsiderations__list {
-  font-size: 1.125rem;
-  line-height: 1.17;
-  font-family: $font-secondary-medium;
+  max-width: 15rem;
+  font-family: $font-secondary-light;
   color: $color-grey-primary;
-  margin-top: 2.4rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   list-style-image: url("/images/img-list-item.png");
+
+  @include from($tablet) {
+    margin-top: 2.4rem;
+    margin-bottom: 4rem;
+    max-width: 100rem;
+    font-family: $font-secondary-medium;
+  }
 
   .c-gconsiderations__list-item {
     padding-left: 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1;
+
+    @include from($tablet) {
+      font-size: 1.125rem;
+      line-height: 1.17;
+    }
   }
 }
 
@@ -89,22 +166,57 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 75rem;
+    width: 15rem;
     margin-left: 50%;
     transform: translate(-50%);
+
+    @include between($tablet, $desktop) {
+      width: 40rem;
+    }
+
+    @include between($desktop, $desktop-large) {
+      width: 50rem;
+    }
+
+    @include between($desktop-large, $ultra-wide-screen) {
+      width: 60rem;
+    }
+
+    @include from($ultra-wide-screen) {
+      width: 75rem;
+    }
   }
 
   .c-gconsiderations__heading--secondary {
-    font-size: 1.875rem;
-    line-height: 1.874rem;
+    font-size: 1.2rem;
+    line-height: 1.1rem;
     font-family: $font-primary;
     color: $color-grey-primary;
     text-transform: uppercase;
-    margin-top: 1.5rem;
-    padding-left: 31.2rem;
+    margin-top: 1rem;
+    text-align: left;
     position: relative;
-    padding-bottom: 2rem;
-    align-self: flex-start;
+    padding-bottom: 1rem;
+
+    @include between($tablet, $desktop) {
+      font-size: 1.875rem;
+      line-height: 1.874rem;
+      margin-top: 1.5rem;
+      padding-bottom: 2rem;
+      margin-left: -60%;
+    }
+
+    @include between($desktop, $desktop-large) {
+      margin-left: -70%;
+    }
+
+    @include between($desktop-large, $ultra-wide-screen) {
+      margin-left: -60%;
+    }
+
+    @include from($ultra-wide-screen) {
+      margin-left: -45%;
+    }
 
     &:after {
       content: "";
@@ -112,28 +224,50 @@
       position: absolute;
       bottom: 0;
       left: 0;
-      margin-left: 31.5rem;
       width: 5.25rem;
     }
   }
 
   .c-gconsiderations__text-two {
-    font-size: 1.125rem;
-    line-height: 1.4;
+    font-size: 0.9rem;
+    line-height: 1;
     font-family: $font-secondary-regular;
-    width: 57rem;
+    width: 15rem;
     color: $color-white-primary;
     margin-top: 1.5rem;
-    margin-bottom: 4.4rem;
+    margin-bottom: 4rem;
+
+    @include between($tablet, $desktop) {
+      font-size: 1rem;
+      line-height: 1.1;
+      width: 45rem;
+      margin-top: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    @include from($desktop) {
+      font-size: 1.125rem;
+      line-height: 1.4;
+      font-family: $font-secondary-regular;
+      width: 57rem;
+      color: $color-white-primary;
+      margin-top: 1.5rem;
+      margin-bottom: 4.4rem;
+    }
   }
 }
 
 .c-link {
   color: $color-turquoise-primary;
-  font-size: 1.125rem;
-  line-height: 1.4;
+  font-size: 0.9rem;
+  line-height: 1;
   font-family: $font-secondary-regular;
   text-decoration: none;
+
+  @include from($tablet) {
+    font-size: 1.125rem;
+    line-height: 1.4;
+  }
 
   &:hover {
     text-decoration: underline;

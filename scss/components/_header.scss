@@ -5,20 +5,49 @@
 }
 
 .c-header__nav {
+  text-align: center;
   background: $color-grey-secondary;
-  height: 4rem;
   border-radius: 0 0.3rem 0.3rem 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+
+  @include from($tablet) {
+    position: relative;
+  }
+
+  @include until($tablet) {
+    display: none;
+  }
+
+  @include between($tablet, 944px) {
+    height: 3.3rem;
+  }
+
+  @include between($desktop-large, $ultra-wide-screen) {
+    height: 2.4rem;
+  }
+
+  @include from($ultra-wide-screen) {
+    height: 4.1rem;
+  }
 }
 
 .c-header__nav-list {
   display: inline-flex;
   list-style: none;
+  flex-direction: column;
 
   li {
-    padding: 0 2rem;
+    padding: 0 0.5rem;
+    text-align: center;
+    margin-bottom: 0.9rem;
 
-    &:not(:first-of-type, :last-of-type) {
-      padding: 0 3rem;
+    @include from($ultra-wide-screen) {
+      &:not(:first-of-type, :last-of-type) {
+        padding: 0 2rem;
+      }
     }
 
     &:hover {
@@ -28,15 +57,34 @@
         border-radius: 0.3rem;
       }
     }
+
+    @include from($tablet) {
+      text-align: left;
+      margin-bottom: 0;
+    }
   }
 
   a {
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 2.2rem;
-    line-height: 1.87;
     font-family: $font-primary;
     color: $color-white-primary;
+    font-size: 1.4rem;
+    line-height: 1.2;
+
+    @include between($desktop-large, $ultra-wide-screen) {
+      font-size: 1.7rem;
+      line-height: 1.4;
+    }
+
+    @include from($ultra-wide-screen) {
+      font-size: 2.2rem;
+      line-height: 1.87;
+    }
+  }
+
+  @include from($tablet) {
+    flex-direction: row;
   }
 }
 
@@ -48,8 +96,13 @@
 .c-header__text {
   color: $color-grey-primary;
   font-family: $font-secondary-medium;
-  font-size: 1.125rem;
-  line-height: 1.17;
+  font-size: 0.6rem;
+  line-height: 1;
+
+  @include from($tablet) {
+    font-size: 1.125rem;
+    line-height: 1.17;
+  }
 }
 
 .c-header__text--above {
@@ -63,30 +116,94 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 5.25rem;
-    margin-left: 11rem;
+    width: 2.25rem;
+    margin-left: 6rem;
+
+    @include from($tablet) {
+      width: 5.25rem;
+      margin-left: 11rem;
+    }
   }
 }
 
 .c-header__headline {
-  height: 4rem;
+  height: 1.3rem;
   font-family: $font-primary;
   color: $color-white-primary;
   text-transform: uppercase;
-  font-size: 3.75rem;
-  line-height: 1.84;
+  font-size: 1rem;
+  line-height: 1;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+
+  &:last-of-type {
+    display: none;
+
+    @include from($tablet) {
+      display: contents;
+    }
+  }
+
+  @include between($tablet, $desktop-large) {
+    height: 2.1rem;
+    font-size: 2rem;
+    line-height: 1;
+    padding: 0;
+    text-align: unset;
+    margin-bottom: 0;
+  }
+
+  @include between($desktop-large, $ultra-wide-screen) {
+    height: 3rem;
+    font-size: 2.75rem;
+    line-height: 1.2;
+    padding: 0;
+    text-align: unset;
+    margin-bottom: 0;
+  }
+
+  @include from($ultra-wide-screen) {
+    height: 4rem;
+    font-size: 3.75rem;
+    line-height: 1.84;
+    padding: 0;
+    text-align: unset;
+    margin-bottom: 0;
+  }
 
   &:last-of-type {
     margin-bottom: 2rem;
   }
 
   span {
-    font-size: 3.75rem;
-    line-height: 1.84;
+    font-size: 1rem;
+    line-height: 1;
     color: $color-grey-primary;
-    padding-right: 0.8rem;
-    margin-right: 0.8rem;
+    padding-right: 0.3rem;
+    margin-right: 0.3rem;
     position: relative;
+
+    @include between($tablet, $desktop-large) {
+      font-size: 1.8rem;
+      line-height: 1;
+      padding-right: 0.8rem;
+      margin-right: 0.8rem;
+    }
+
+    @include between($desktop-large, $ultra-wide-screen) {
+      font-size: 2.75rem;
+      line-height: 1.2;
+      padding-right: 0.8rem;
+      margin-right: 0.8rem;
+    }
+
+    @include from($ultra-wide-screen) {
+      font-size: 3.75rem;
+      line-height: 1.84;
+      padding-right: 0.8rem;
+      margin-right: 0.8rem;
+    }
 
     &:after {
       content: "";
@@ -94,8 +211,23 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      height: 3.56rem;
-      margin-bottom: 1.5rem;
+      height: 1rem;
+      margin-bottom: 0.5rem;
+
+      @include between($tablet, $desktop-large) {
+        height: 1.8rem;
+        margin-bottom: 0.7rem;
+      }
+
+      @include between($desktop-large, $ultra-wide-screen) {
+        height: 2.5rem;
+        margin-bottom: 1.3rem;
+      }
+
+      @include from($ultra-wide-screen) {
+        height: 3.56rem;
+        margin-bottom: 1.5rem;
+      }
     }
   }
 }
@@ -105,14 +237,26 @@
   text-transform: uppercase;
   color: $color-white-primary;
   transform: rotate(-90deg);
-  font-size: 0.87rem;
-  line-height: 1.17;
+  font-size: 0.4rem;
+  line-height: 0.9;
   border-bottom: 2px solid $color-red-primary;
-  padding-left: 1.9rem;
-  padding-bottom: 0.5rem;
+  margin-left: 3.5rem;
+  margin-bottom: 7.5rem;
   position: absolute;
   left: 0;
   bottom: 0;
-  margin-left: 5.5rem;
-  margin-bottom: 13.5rem;
+
+  @include between($tablet, $desktop-large) {
+    font-size: 0.6rem;
+    line-height: 0.9;
+    margin-left: 3.5rem;
+    margin-bottom: 9.5rem;
+  }
+
+  @include from($desktop-large) {
+    margin-left: 5.5rem;
+    margin-bottom: 13.5rem;
+    font-size: 0.87rem;
+    line-height: 1.17;
+  }
 }
