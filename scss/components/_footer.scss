@@ -79,7 +79,7 @@
     font-family: $font-secondary-regular;
     font-size: 0.8rem;
     line-height: 0.9;
-    max-width: 17rem;
+    max-width: 15rem;
     padding: 0.5rem;
 
     @include between($tablet, $desktop-large) {
