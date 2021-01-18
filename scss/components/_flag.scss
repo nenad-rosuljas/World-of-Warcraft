@@ -5,8 +5,18 @@
 
 .c-flag {
   border: 1px solid transparent;
-  height: 0.6875rem;
-  width: 0.6875rem;
+  height: 0.4875rem;
+  width: 0.4875rem;
+
+  @include between($tablet, $desktop) {
+    height: 0.5875rem;
+    width: 0.5875rem;
+  }
+
+  @include from($desktop) {
+    height: 0.6875rem;
+    width: 0.6875rem;
+  }
 }
 
 .c-flag--red {

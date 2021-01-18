@@ -1,43 +1,101 @@
 .c-footer__container-one {
   background-color: $color-black-secondary;
-  height: 19.3rem;
   @include flex-column-center;
+  height: 12em;
+
+  @include from($tablet) {
+    height: 19.3rem;
+  }
 }
 
 .c-footer__message,
 .c-footer__contact {
-  font-size: 1.125rem;
-  line-height: 1.17;
   color: $color-white-primary;
 }
 
 .c-footer__message {
   font-family: $font-secondary-medium;
-  padding-bottom: 3rem;
+  padding-bottom: 1rem;
+  font-size: 0.9rem;
+  line-height: 1;
+
+  @include from($tablet) {
+    padding-bottom: 3rem;
+    font-size: 1.125rem;
+    line-height: 1.17;
+  }
 }
 
 .c-footer__contact {
-  display: inline-flex;
   list-style: none;
   color: $color-white-primary;
   font-family: $font-secondary-regular;
 
+  @include from($tablet) {
+    display: inline-flex;
+  }
+
   li {
-    padding: 2rem 0;
-    &:not(:first-of-type) {
-      padding-left: 10rem;
+    padding: 0.5rem 2rem 0 2rem;
+    font-size: 0.9rem;
+    line-height: 1;
+
+    @include from($tablet) {
+      font-size: 1.125rem;
+      line-height: 1.17;
+    }
+
+    @include from($desktop-large) {
+      padding: 1rem 4rem 0 4rem;
     }
   }
 }
 
+.c-footer__icon {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: $color-turquoise-primary;
+  text-decoration: none;
+  font-size: 3rem;
+  margin-right: 2rem;
+}
+
 .c-footer__container-two {
   background-color: $color-black-primary;
-  height: 3.6rem;
-  @include flex-column-center;
+  position: relative;
+  height: 4rem;
+
+  @include from($tablet) {
+    height: 3.6rem;
+  }
+
+  @include from($ultra-wide-screen) {
+    @include flex-column-center;
+  }
 
   .c-footer__comment {
     color: $color-white-primary;
     font-family: $font-secondary-regular;
-    margin-left: -15rem;
+    font-size: 0.8rem;
+    line-height: 0.9;
+    max-width: 15rem;
+    padding: 0.5rem;
+
+    @include between($tablet, $desktop-large) {
+      max-width: 42rem;
+      font-size: 1rem;
+      line-height: 1.1;
+    }
+
+    @include between($desktop-large, $ultra-wide-screen) {
+      padding: 0.5rem;
+      max-width: 65rem;
+    }
+
+    @include from($ultra-wide-screen) {
+      margin-left: -15rem;
+      max-width: 80rem;
+    }
   }
 }
